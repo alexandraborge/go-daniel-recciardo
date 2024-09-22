@@ -1,2 +1,2 @@
-# go-daniel-recciardo
+# go-daniel-ricciardo
 Race details, predictions, and real time race map
