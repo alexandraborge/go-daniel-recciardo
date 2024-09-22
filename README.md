@@ -1,2 +1,2 @@
 # go-daniel-recciardo
-Current year 
+Race details, predictions, and real time race map
