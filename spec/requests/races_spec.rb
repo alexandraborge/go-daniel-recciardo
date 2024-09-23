@@ -6,6 +6,10 @@ RSpec.describe "Races", type: :request do
       get "/races/index"
       expect(response).to have_http_status(:success)
     end
-  end
 
+    it 'gets race information from the OpenF1 API for a given season' do
+      expect(HTTParty).to receive(:get).with("https://api.openf1.org/v1/meetings?year=2024")
+      get "/races/index"
+    end
+  end
 end
