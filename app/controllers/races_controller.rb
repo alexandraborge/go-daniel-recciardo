@@ -1,5 +1,5 @@
 class RacesController < ApplicationController
   def index
-    Race.all
+    @races = Race.all
   end
 end

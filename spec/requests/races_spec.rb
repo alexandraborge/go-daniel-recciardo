@@ -7,9 +7,10 @@ RSpec.describe "Races", type: :request do
       expect(response).to have_http_status(:success)
     end
 
-    it 'gets race information from the OpenF1 API for a given season' do
-      expect(HTTParty).to receive(:get).with("https://api.openf1.org/v1/meetings?year=2024")
+    it 'gets all race information' do
       get "/races"
+      # THE DB IS NOT SEEDED IN THE TEST ENVIRONMENT
+      # I want to test that @races is an array with race objects in it
     end
   end
 end
